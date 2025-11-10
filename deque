@@ -1,0 +1,17 @@
+#include <stdio.h>
+#define SIZE 5
+
+int q[SIZE]={10,20,30,40,50};
+int f=0, r=4;
+
+void dequeue(){
+    if(f>r) printf("Empty\n");
+    else printf("%d dequeued\n", q[f++]);
+}
+
+int main(){
+    dequeue();
+    dequeue();
+    dequeue();
+    return 0;
+}
